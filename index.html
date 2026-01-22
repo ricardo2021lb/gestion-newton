@@ -10,7 +10,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="bg-slate-50">
+
+    <div class="flex h-screen overflow-hidden">
+        
+        <aside id="sidebar" class="fixed inset-y-0 left-0 z-50 w-64 bg-gradient-newton transform -translate-x-full lg:translate-x-0 transition-transform duration-300">
+            <div class="p-6">
+                <h1 class="text-white text-2xl font-bold">Newton App</h1>
+            </div>
+            </aside>
+
+        <main class="flex-1 flex flex-col overflow-y-auto lg:ml-64">
+            <header class="bg-white p-4 shadow-sm">
+                <h2 class="text-xl font-semibold text-slate-800">Panel de Control</h2>
+            </header>
+
+            <div id="contenedor-vistas" class="p-6">
+                <div id="dashboard-view">
+                   <h3 class="text-lg font-bold">Bienvenido al Sistema</h3>
+                   </div>
+            </div>
+        </main>
+    </div>
+
     <script src="app.js"></script>
 </body>
 </html>
